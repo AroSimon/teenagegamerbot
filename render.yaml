@@ -19,7 +19,9 @@ services:
       - key: DATABASE_NAME
         sync: false
       - key: DATABASE_URI
-        sync: false 
+        sync: false
+      - key: PICS
+        sync: false
       - key: LOG_CHANNEL
         sync: false    
     autoDeploy: false
