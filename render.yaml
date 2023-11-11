@@ -1,11 +1,11 @@
 services:
   - type: web
     plan: free
-    name: MyBot
+    name: teenagegamerbot
     env: python
     buildCommand: pip install -r requirements.txt
     startCommand: python3 bot.py
-    repo: https://github.com/AroSimon/My-Bot.git      
+    repo: https://github.com/AroSimon/My-Bot/.git      
     branch: master
     envVars:
       - key: BOT_TOKEN 
@@ -19,7 +19,7 @@ services:
       - key: DATABASE_NAME
         sync: false
       - key: DATABASE_URI
-        sync: false
+        sync: false 
       - key: PICS
         sync: false
       - key: LOG_CHANNEL
